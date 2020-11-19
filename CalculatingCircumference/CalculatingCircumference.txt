@@ -1,0 +1,2 @@
+Mitch failed fifth grade math and he needs your help to calculate the circumfrence of a circle.
+Write a program that uses a Scanner object to prompt the user for the radius of a circle. The program should then use that input to calculate the circumference of the circle and then print it.
