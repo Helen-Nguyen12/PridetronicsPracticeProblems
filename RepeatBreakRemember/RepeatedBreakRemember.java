@@ -8,26 +8,25 @@ public class RepeatedBreakRemember {
         System.out.println("Insert a Number:");
         //Grabs number from terminal
         int count = scanner.nextInt();
+        int sum = 0;
         //While loop to asks for number until user puts in -1
         while (count != -1) {
-            if (count > -1) {
-                System.out.println("Insert a Number:");
-                count = scanner.nextInt();
-            } 
-            else if (count < -1) {
-                System.out.println("Insert a Number:");
-                count = scanner.nextInt();
-            }
-            else if (count == -1) {
+            if (count == -1) {
                 break;
             }
+            else if (count > -1 || count < -1) {
+                System.out.println("Insert a Number:");
+                count = scanner.nextInt();
+                sum += count;
+                System.out.println("Sum = " + sum);
+            } 
         }
         //Prints out the words
         System.out.println("Thanks! Bye!");
         //Close Scanner
         scanner.close();
-        
     }
+    //Part 2: I can't fix the part where I shouldn't include -1 to the sum.
     /*
      * for(int count = scanner.nextInt(); count < 10; count ++){ if (count == -1) {
      * System.out.print("Thanks! Bye!"); break; } if (count != -1) {
