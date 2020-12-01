@@ -9,6 +9,7 @@ public class RepeatedBreakRemember {
         //Grabs number from terminal
         int count = scanner.nextInt();
         int sum = 0;
+        int number = 0;
         //While loop to asks for number until user puts in -1
         while (count != -1) {
             if (count == -1) {
@@ -18,7 +19,9 @@ public class RepeatedBreakRemember {
                 System.out.println("Insert a Number:");
                 count = scanner.nextInt();
                 sum += count;
+                number ++;
                 System.out.println("Sum = " + sum);
+                System.out.println("Numbers of Times You Inserted a Number: " + number);
             } 
         }
         //Prints out the words
@@ -26,13 +29,15 @@ public class RepeatedBreakRemember {
         //Close Scanner
         scanner.close();
     }
-    //Part 2: I can't fix the part where I shouldn't include -1 to the sum.
+    //I can't fix the part where I shouldn't include -1 to the parts.
+
     /*
      * for(int count = scanner.nextInt(); count < 10; count ++){ if (count == -1) {
      * System.out.print("Thanks! Bye!"); break; } if (count != -1) {
      * System.out.println("Insert a Number:"); continue; } }
      * 
-     * //For loop to repeat 10 times, counting by 1 /*for(int count = 1; count <=
-     * 10; count ++){ System.out.println(count); }
+     * //For loop to repeat 10 times, counting by 1 
+     * for(int count = 1; count <= 10; count ++){
+     *  System.out.println(count); }
      */
 }
