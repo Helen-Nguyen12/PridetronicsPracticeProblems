@@ -25,11 +25,11 @@ public class RepeatedBreakRemember {
         */
 
         //While loop to asks for number until user puts in -1
-        while (count != -1) {
+        while (true) {
             if (count == -1) {
                 break;
             }
-            else if (count > -1 || count < -1) {
+            else if (count != -1) {
                 System.out.println("Insert an Integer Number:");
                 count = scanner.nextInt();
                 sum += count;
