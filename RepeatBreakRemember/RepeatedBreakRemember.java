@@ -5,19 +5,32 @@ public class RepeatedBreakRemember {
         // Initalize scanner and grab number from terminal
         Scanner scanner = new Scanner(System.in);
         // Asks User for a number
-        System.out.println("Insert a Number:");
+        System.out.println("Insert an Integer Number:");
         //Grabs number from terminal
         int count = scanner.nextInt();
         int sum = 0;
         int number = 0;
         int mean = 0;
+        /*int odd = 0;
+        int even = 0;
+
+        if (count/2 == 0){
+            even = count;
+            System.out.println ("Even Numbers: " + even);
+        }
+        if (count/2 != 0){
+            odd = count;
+            System.out.println("Odd Numbers: " + odd);
+        }
+        */
+
         //While loop to asks for number until user puts in -1
         while (count != -1) {
             if (count == -1) {
                 break;
             }
             else if (count > -1 || count < -1) {
-                System.out.println("Insert a Number:");
+                System.out.println("Insert an Integer Number:");
                 count = scanner.nextInt();
                 sum += count;
                 number ++;
