@@ -24,11 +24,12 @@ public class RepeatedBreakRemember {
             else if (count == -1) {
                 break;
             }
+        }
         //Prints out the words
         System.out.println("Thanks! Bye!");
         //Close Scanner
         scanner.close();
-        }
+        
     }
     /*
      * for(int count = scanner.nextInt(); count < 10; count ++){ if (count == -1) {
