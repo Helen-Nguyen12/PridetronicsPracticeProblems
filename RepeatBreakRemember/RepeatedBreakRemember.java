@@ -27,7 +27,6 @@ public class RepeatedBreakRemember {
         System.out.println("Thanks! Bye!");
         }
     }
-    // How does one make the answer repeat?
     /*
      * for(int count = scanner.nextInt(); count < 10; count ++){ if (count == -1) {
      * System.out.print("Thanks! Bye!"); break; } if (count != -1) {
