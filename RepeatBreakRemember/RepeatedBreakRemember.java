@@ -10,6 +10,7 @@ public class RepeatedBreakRemember {
         int count = scanner.nextInt();
         int sum = 0;
         int number = 0;
+        int mean = 0;
         //While loop to asks for number until user puts in -1
         while (count != -1) {
             if (count == -1) {
@@ -20,8 +21,10 @@ public class RepeatedBreakRemember {
                 count = scanner.nextInt();
                 sum += count;
                 number ++;
+                mean = sum/number;
                 System.out.println("Sum = " + sum);
                 System.out.println("Numbers of Times You Inserted a Number: " + number);
+                System.out.println("Mean: " + mean);
             } 
         }
         //Prints out the words
