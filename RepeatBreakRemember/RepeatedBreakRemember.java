@@ -8,9 +8,6 @@ public class RepeatedBreakRemember {
         System.out.println("Insert a Number:");
         //Grabs number from terminal
         int count = scanner.nextInt();
-        if (count == -1) {
-            System.out.println("Thanks! Bye!");
-        }
         //While loop to asks for number until user puts in -1
         while (count != -1) {
             if (count > -1) {
