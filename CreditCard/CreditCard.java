@@ -22,9 +22,9 @@ public class CreditCard {
     }
 
     public static void main(String[] args) {
-        // Creates a new card with 10 dollars to start
-        CreditCard card = new CreditCard(10);
-
+    // Creates a new card with 10 dollars to start
+    CreditCard card = new CreditCard(10);
+    
     // Prints the starting value of the card
     System.out.println("Money in Card:" + card.getBalance());
 
