@@ -1,25 +1,30 @@
 import java.util.HashMap;
 
-public class test {
+public class CreditCard {
     private double balance;
-    public static void main(String[] args) {
-    // Creates a new card with 10 dollars to start
-    CreditCard card = new CreditCard(10);
 
-    public test(double balance) {
+    public CreditCard(double balance) {
         this.balance = balance;
     }
-    public double getBalance(){
+
+    public double getBalance() {
         return this.balance;
     }
-    public double addMoney(double amount){
+
+    public double addMoney(double amount) {
         this.balance = balance + 20.0;
         return this.balance;
     }
-    public double removeMoney(double amount){
+
+    public double removeMoney(double amount) {
         this.balance = balance - 5.0;
         return this.balance;
     }
+
+    public static void main(String[] args) {
+        // Creates a new card with 10 dollars to start
+        CreditCard card = new CreditCard(10);
+
     // Prints the starting value of the card
     System.out.println("Money in Card:" + card.getBalance());
 
